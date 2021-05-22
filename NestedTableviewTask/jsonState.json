@@ -1,0 +1,75 @@
+{
+    "stateList": [
+        {
+            "stateName": "TamilNadu State",
+            "districtList": [
+                {
+                    "districtName": "Chennai District",
+                    "areaList": [
+                        {
+                            "areaName": "T nagar Area",
+                            "shopList": [
+                                "GRT",
+                                "Lalitha",
+                                "Saravana Stores",
+                                "Chennai Silkhs"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "stateName": "Kerala State",
+            "districtList": [
+                {
+                    "districtName": "Thiruvananthapuram District",
+                    "areaList": [
+                        {
+                            "areaName": "Kuttanad Area",
+                            "shopList": [
+                                "Backwaters",
+                                "Pamba",
+                                "Muvattupuzha"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "districtName": "Alappuzha District",
+                    "areaList": [
+                        {
+                            "areaName": "Neyyattinkara Area",
+                            "shopList": [
+                                "Neyyar River"
+                            ]
+                        },
+                        {
+                            "areaName": "Nedumangad Area",
+                            "shopList": [
+                                "Koyikkal Palace"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "stateName": "Maharashtra State",
+            "districtList": [
+                {
+                    "districtName": "Mumbai City District",
+                    "areaList": [
+                        {
+                            "areaName": "Navi Mumbai Area",
+                            "shopList": [
+                                "India Gate",
+                                "Taj Hotel",
+                                "Dockyard"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

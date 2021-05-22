@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NestedTableviewTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="F0V-ID-5o6">
+                                <rect key="frame" x="6" y="0.0" width="308" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DistrictCell" rowHeight="341" id="BFf-yO-cQv" customClass="DistrictCell" customModule="NestedTableviewTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="308" height="341"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BFf-yO-cQv" id="7m1-aB-Ojy">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="341"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4Jh-wv-M0q">
+                                                    <rect key="frame" x="12" y="0.0" width="296" height="341"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <prototypes>
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AreaCell" rowHeight="314" id="F4a-j2-g5g" customClass="AreaCell" customModule="NestedTableviewTask" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="55.5" width="296" height="314"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F4a-j2-g5g" id="OSb-d9-mjm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="296" height="314"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="M3Q-sQ-qaE">
+                                                                        <rect key="frame" x="18" y="0.0" width="278" height="314"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <prototypes>
+                                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopCell" rowHeight="252" id="cVh-co-QuO" customClass="ShopCell" customModule="NestedTableviewTask" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="28" width="278" height="252"/>
+                                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cVh-co-QuO" id="4d0-GR-qcG">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="278" height="252"/>
+                                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-aQ-1H2">
+                                                                                            <rect key="frame" x="20" y="2" width="248" height="248"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="lnd-PA-s5S"/>
+                                                                                            </constraints>
+                                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                            <nil key="textColor"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                    </subviews>
+                                                                                    <constraints>
+                                                                                        <constraint firstItem="qJq-aQ-1H2" firstAttribute="leading" secondItem="4d0-GR-qcG" secondAttribute="leading" constant="20" id="NK9-0q-qaF"/>
+                                                                                        <constraint firstItem="qJq-aQ-1H2" firstAttribute="top" secondItem="4d0-GR-qcG" secondAttribute="top" constant="2" id="Sso-nI-pom"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="qJq-aQ-1H2" secondAttribute="bottom" constant="2" id="WJs-1G-2vx"/>
+                                                                                        <constraint firstAttribute="trailing" secondItem="qJq-aQ-1H2" secondAttribute="trailing" constant="10" id="jIp-8h-Gj9"/>
+                                                                                    </constraints>
+                                                                                </tableViewCellContentView>
+                                                                                <connections>
+                                                                                    <outlet property="lblShopName" destination="qJq-aQ-1H2" id="stk-k0-0oX"/>
+                                                                                </connections>
+                                                                            </tableViewCell>
+                                                                        </prototypes>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="2"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outlet property="dataSource" destination="F4a-j2-g5g" id="dLQ-su-55y"/>
+                                                                            <outlet property="delegate" destination="F4a-j2-g5g" id="yhL-C0-H6v"/>
+                                                                        </connections>
+                                                                    </tableView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="M3Q-sQ-qaE" firstAttribute="leading" secondItem="OSb-d9-mjm" secondAttribute="leading" constant="18" id="03Z-Or-d2z"/>
+                                                                    <constraint firstItem="M3Q-sQ-qaE" firstAttribute="top" secondItem="OSb-d9-mjm" secondAttribute="top" id="A5b-XX-eDy"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="M3Q-sQ-qaE" secondAttribute="trailing" id="ZXc-f0-qJ5"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="M3Q-sQ-qaE" secondAttribute="bottom" id="oGj-aZ-ilK"/>
+                                                                </constraints>
+                                                            </tableViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="tblArea" destination="M3Q-sQ-qaE" id="PpL-Nn-PEv"/>
+                                                            </connections>
+                                                        </tableViewCell>
+                                                    </prototypes>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="1"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="BFf-yO-cQv" id="D5e-3U-HQW"/>
+                                                        <outlet property="delegate" destination="BFf-yO-cQv" id="KNi-CL-F09"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4Jh-wv-M0q" secondAttribute="trailing" id="SqY-5X-bfg"/>
+                                                <constraint firstItem="4Jh-wv-M0q" firstAttribute="leading" secondItem="7m1-aB-Ojy" secondAttribute="leading" constant="12" id="eU8-3d-V5g"/>
+                                                <constraint firstItem="4Jh-wv-M0q" firstAttribute="top" secondItem="7m1-aB-Ojy" secondAttribute="top" id="i1g-DA-vpR"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Jh-wv-M0q" secondAttribute="bottom" id="utO-uI-aSU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tblDistrict" destination="4Jh-wv-M0q" id="VAG-6K-xyZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="0"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mBZ-BJ-fRM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZTy-cJ-X5d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F0V-ID-5o6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="L7V-Xa-F9h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F0V-ID-5o6" secondAttribute="trailing" constant="6" id="Xbg-Sg-7Pc"/>
+                            <constraint firstItem="F0V-ID-5o6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="b2Z-nT-lBW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F0V-ID-5o6" secondAttribute="bottom" id="huO-ha-qKh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblState" destination="F0V-ID-5o6" id="JOC-TW-mma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.75" y="88.732394366197184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

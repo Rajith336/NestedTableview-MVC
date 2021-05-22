@@ -16,6 +16,11 @@
 		CF5D37D22656B80C003F11DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5D37D02656B80C003F11DA /* LaunchScreen.storyboard */; };
 		CF5D37DD2656B80C003F11DA /* NestedTableviewTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D37DC2656B80C003F11DA /* NestedTableviewTaskTests.swift */; };
 		CF5D37E82656B80C003F11DA /* NestedTableviewTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D37E72656B80C003F11DA /* NestedTableviewTaskUITests.swift */; };
+		CF5D37FE2656C1CD003F11DA /* DistrictCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D37FD2656C1CD003F11DA /* DistrictCell.swift */; };
+		CF5D38062656C284003F11DA /* AreaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D38052656C284003F11DA /* AreaCell.swift */; };
+		CF5D380B2656C33E003F11DA /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D380A2656C33E003F11DA /* ShopCell.swift */; };
+		CF5D38132656D280003F11DA /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D38122656D280003F11DA /* StateModel.swift */; };
+		CFD318BB2658F5E60015059A /* jsonState.json in Resources */ = {isa = PBXBuildFile; fileRef = CFD318BA2658F5E60015059A /* jsonState.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		CF5D37E32656B80C003F11DA /* NestedTableviewTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedTableviewTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5D37E72656B80C003F11DA /* NestedTableviewTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTableviewTaskUITests.swift; sourceTree = "<group>"; };
 		CF5D37E92656B80C003F11DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5D37FD2656C1CD003F11DA /* DistrictCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictCell.swift; sourceTree = "<group>"; };
+		CF5D38052656C284003F11DA /* AreaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCell.swift; sourceTree = "<group>"; };
+		CF5D380A2656C33E003F11DA /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		CF5D38122656D280003F11DA /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		CFD318BA2658F5E60015059A /* jsonState.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonState.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,14 @@
 		CF5D37C12656B80B003F11DA /* NestedTableviewTask */ = {
 			isa = PBXGroup;
 			children = (
+				CF5D37FC2656C19D003F11DA /* Cell */,
+				CF5D37FB2656C145003F11DA /* Model */,
+				CF5D37FA2656C143003F11DA /* View */,
+				CF5D37F92656C139003F11DA /* ViewModel */,
+				CF5D37F82656C116003F11DA /* Viewcontroller */,
 				CF5D37C22656B80B003F11DA /* AppDelegate.swift */,
+				CFD318BA2658F5E60015059A /* jsonState.json */,
 				CF5D37C42656B80B003F11DA /* SceneDelegate.swift */,
-				CF5D37C62656B80B003F11DA /* ViewController.swift */,
-				CF5D37C82656B80B003F11DA /* Main.storyboard */,
 				CF5D37CE2656B80C003F11DA /* Assets.xcassets */,
 				CF5D37D02656B80C003F11DA /* LaunchScreen.storyboard */,
 				CF5D37D32656B80C003F11DA /* Info.plist */,
@@ -129,6 +143,47 @@
 				CF5D37E92656B80C003F11DA /* Info.plist */,
 			);
 			path = NestedTableviewTaskUITests;
+			sourceTree = "<group>";
+		};
+		CF5D37F82656C116003F11DA /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				CF5D37C62656B80B003F11DA /* ViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		CF5D37F92656C139003F11DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF5D37FA2656C143003F11DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF5D37C82656B80B003F11DA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF5D37FB2656C145003F11DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF5D38122656D280003F11DA /* StateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF5D37FC2656C19D003F11DA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF5D37FD2656C1CD003F11DA /* DistrictCell.swift */,
+				CF5D38052656C284003F11DA /* AreaCell.swift */,
+				CF5D380A2656C33E003F11DA /* ShopCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF5D37D22656B80C003F11DA /* LaunchScreen.storyboard in Resources */,
+				CFD318BB2658F5E60015059A /* jsonState.json in Resources */,
 				CF5D37CF2656B80C003F11DA /* Assets.xcassets in Resources */,
 				CF5D37CA2656B80B003F11DA /* Main.storyboard in Resources */,
 			);
@@ -262,8 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF5D37C72656B80B003F11DA /* ViewController.swift in Sources */,
+				CF5D37FE2656C1CD003F11DA /* DistrictCell.swift in Sources */,
+				CF5D380B2656C33E003F11DA /* ShopCell.swift in Sources */,
 				CF5D37C32656B80B003F11DA /* AppDelegate.swift in Sources */,
 				CF5D37CD2656B80B003F11DA /* NestedTableviewTask.xcdatamodeld in Sources */,
+				CF5D38132656D280003F11DA /* StateModel.swift in Sources */,
+				CF5D38062656C284003F11DA /* AreaCell.swift in Sources */,
 				CF5D37C52656B80B003F11DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
